@@ -1,0 +1,117 @@
+header{
+    background: url(/images/desktop/image-hero.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    height: 95vh;
+    background-position: center;
+}
+
+.header-logo img{
+    max-width: 200px;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-mobile{
+    background: url(/images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 26.4px;
+    cursor: pointer;
+    display: none;
+    border: none;
+}
+
+.header-nav-links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-text h1{
+    border: 2px solid var(--c-0);
+    padding: 40px;
+    max-width: 15ch;
+    margin-top: 100px;
+}
+
+@media (max-width: 850px){
+    .menu-mobile,
+    .header-logo{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 60px;
+    }
+
+    .menu-mobile{
+        right: 40px;
+    }
+
+    .menu-mobile.active{
+        background: url(/images/icon-close.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .header-nav-links{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: absolute;
+        background-color: var(--c-3);
+        width: 100vw;
+        top: 0;
+        left: 0;
+        padding-left: 40px;
+        visibility: hidden;
+        height: 0px;
+        transition: 0.4s;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .header-nav-links.active{
+        visibility: visible;
+        height: 100vh;
+        padding-top: 240px;
+        padding-bottom: 40px;
+    }
+
+    .header-nav-links a{
+        font: 300 32px/1.5 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 650px){
+    header{
+        background: url(/images/mobile/image-hero.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .header-logo{
+        width: 160px;
+    }
+
+    .menu-mobile,
+    .header-logo{
+        top: 40px;
+    }
+
+    .menu-mobile{
+        right: 20px;
+    }
+
+    .header-text h1{
+        padding: 20px;
+        margin-top: 200px;
+    }
+}
