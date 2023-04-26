@@ -1,0 +1,39 @@
+.leader{
+    display: flex;
+    align-items: flex-end;
+    padding: 120px 40px;
+}
+
+.leader-text{
+    padding: 80px 0px 0px 80px;
+    position: relative;
+    background-color: var(--c-0);
+    margin-left: -160px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.leader-text h1{
+    max-width: 14ch;
+}
+
+.leader-text p{
+    max-width: 46ch;
+}
+
+@media (max-width: 850px){
+    .leader{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .leader-text{
+        margin: unset;
+        padding: unset;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
