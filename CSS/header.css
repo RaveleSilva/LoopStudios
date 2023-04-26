@@ -16,6 +16,35 @@ header{
     justify-content: space-between;
 }
 
+.header-nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-nav-links a{
+    padding: 10px;
+    position: relative;
+}
+
+.header-nav-links a::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: var(--c-0);
+    position: absolute;
+    bottom: -8px;
+    right: 30%;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.header-nav-links a:hover::after {
+    visibility: visible;
+    bottom: -4px;
+}
+
 .menu-mobile{
     background: url(/images/icon-hamburger.svg);
     background-repeat: no-repeat;
@@ -25,12 +54,6 @@ header{
     cursor: pointer;
     display: none;
     border: none;
-}
-
-.header-nav-links{
-    display: flex;
-    align-items: center;
-    gap: 40px;
 }
 
 .header-text h1{
@@ -86,6 +109,17 @@ header{
     .header-nav-links a{
         font: 300 32px/1.5 'Josefin Sans', sans-serif;
         text-transform: uppercase;
+    }
+
+    .header-nav-links a::after{
+        left: 0;
+        width: 0;
+        bottom: -4px;
+    }
+
+    .header-nav-links a:hover::after {
+        visibility: visible;
+        width: 100%;
     }
 }
 
