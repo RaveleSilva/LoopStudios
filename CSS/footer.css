@@ -1,0 +1,42 @@
+footer{
+    background-color: var(--c-3);
+    padding: 40px 0px;
+}
+
+.footer{
+    justify-content: space-between;
+}
+
+.footer-logo img{
+    width: 160px;
+}
+
+.footer,
+.nav-footer,
+.nav-footer-links,
+.footer-social,
+.footer-social-links{
+    display: flex;
+}
+
+.footer-social,
+.nav-footer{
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.nav-footer-links{
+    column-gap: 40px;
+}
+
+.footer-social{
+    align-items: flex-end;
+}
+
+.footer-social-links{
+    column-gap: 20px;
+}
+
+@media (max-width: 850px){
+    
+}

@@ -15,6 +15,7 @@ img{
 button{
     display: block;
     width: max-content;
+    cursor: pointer;
 }
 
 .container{

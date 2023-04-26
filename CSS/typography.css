@@ -1,14 +1,15 @@
-.font-1-s{
+.font-1-s,
+.font-1-sb{
     font: 400 1rem/1.7 'Alata', sans-serif;
 }
 
-.font-2-s{
-    font: 300 1rem/1.5 'Josefin Sans', sans-serif;
+.font-1-sb{
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .font-2-m{
-    font: 300 32px/1.5 'Josefin Sans', sans-serif;
+    font: 300 32px/1.0 'Josefin Sans', sans-serif;
 }
 
 .font-2-l{
