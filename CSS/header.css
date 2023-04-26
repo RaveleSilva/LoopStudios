@@ -135,6 +135,10 @@ header{
         width: 160px;
     }
 
+    .header-nav-links{
+        padding-left: 20px;
+    }
+
     .menu-mobile,
     .header-logo{
         top: 40px;
