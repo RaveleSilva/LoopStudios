@@ -10,8 +10,8 @@
     justify-self: end;
     align-self: end;
     background-color: transparent;
-    border: 2px solid var(--c-3);
-    padding: 4px 40px;
+    border: 1px solid var(--c-3);
+    padding: 8px 40px;
     transition: 0.4s;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .creations-card{
-    height: 460px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -72,35 +72,39 @@
     color: var(--c-3);
 }
 
-.creations-cards-container .creations-card:nth-child(1){
+.creations-card:nth-child(1){
     background-image: url(../images/desktop/image-deep-earth.jpg);
 }
 
-.creations-cards-container .creations-card:nth-child(2){
+.creations-card:nth-child(2){
     background-image: url(../images/desktop/image-night-arcade.jpg);
 }
 
-.creations-cards-container .creations-card:nth-child(3){
+.creations-card:nth-child(3){
     background-image: url(../images/desktop/image-soccer-team.jpg);
 }
 
-.creations-cards-container .creations-card:nth-child(4){
+.creations-card:nth-child(4){
     background-image: url(../images/desktop/image-grid.jpg);
 }
 
-.creations-cards-container .creations-card:nth-child(5){
+.creations-card:nth-child(4) h2{
+    max-width: 4ch;
+}
+
+.creations-card:nth-child(5){
     background-image: url(../images/desktop/image-from-above.jpg);
 }
 
-.creations-cards-container .creations-card:nth-child(6){
+.creations-card:nth-child(6){
     background-image: url(../images/desktop/image-pocket-borealis.jpg);
 }
 
-.creations-cards-container .creations-card:nth-child(7){
+.creations-card:nth-child(7){
     background-image: url(../images/desktop/image-curiosity.jpg);
 }
 
-.creations-cards-container .creations-card:nth-child(8){
+.creations-card:nth-child(8){
     background-image: url(../images/desktop/image-fisheye.jpg);
 }
 
@@ -136,35 +140,35 @@
         padding-bottom: 20px;
     }
 
-    .creations-cards-container .creations-card:nth-child(1){
+    .creations-card:nth-child(1){
         background-image: url(../images/mobile/image-deep-earth.jpg);
     }
     
-    .creations-cards-container .creations-card:nth-child(2){
+    .creations-card:nth-child(2){
         background-image: url(../images/mobile/image-night-arcade.jpg);
     }
     
-    .creations-cards-container .creations-card:nth-child(3){
+    .creations-card:nth-child(3){
         background-image: url(../images/mobile/image-soccer-team.jpg);
     }
     
-    .creations-cards-container .creations-card:nth-child(4){
+    .creations-card:nth-child(4){
         background-image: url(../images/mobile/image-grid.jpg);
     }
     
-    .creations-cards-container .creations-card:nth-child(5){
+    .creations-card:nth-child(5){
         background-image: url(../images/mobile/image-from-above.jpg);
     }
     
-    .creations-cards-container .creations-card:nth-child(6){
+    .creations-card:nth-child(6){
         background-image: url(../images/mobile/image-pocket-borealis.jpg);
     }
     
-    .creations-cards-container .creations-card:nth-child(7){
+    .creations-card:nth-child(7){
         background-image: url(../images/mobile/image-curiosity.jpg);
     }
     
-    .creations-cards-container .creations-card:nth-child(8){
+    .creations-card:nth-child(8){
         background-image: url(../images/mobile/image-fisheye.jpg);
     }
 }
